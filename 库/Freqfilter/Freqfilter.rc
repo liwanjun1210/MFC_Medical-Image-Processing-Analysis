@@ -1,0 +1,267 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Freqfilter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Freqfilter DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Freqfilter\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Freqfilter.DLL\0"
+            VALUE "ProductName", "Freqfilter Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IDEAL_FILTER DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "理想滤波器"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,40,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,109,75,50,14
+    LTEXT           "截止频率：",IDC_STATIC,43,34,40,12
+    EDITTEXT        IDC_IDEAL_CUTOFF_FREQ,87,33,26,15,ES_AUTOHSCROLL
+END
+
+IDD_BUTTERWORTH_FILTER DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "巴特沃斯滤波器参数设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,35,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,75,50,14
+    LTEXT           "截止频率：",IDC_STATIC,47,25,41,13
+    LTEXT           "  阶      数：",IDC_STATIC,46,42,41,13
+    EDITTEXT        IDC_BW_CUTOFF_FREQ,92,24,29,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BW_ORDER,92,40,29,16,ES_AUTOHSCROLL
+END
+
+IDD_HOMOMORPHIC_FILTER DIALOG DISCARDABLE  0, 0, 187, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "同态滤波器参数设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,32,94,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,94,50,14
+    LTEXT           "GammaH =",IDC_STATIC,39,25,39,13
+    LTEXT           "GammaL =",IDC_STATIC,39,45,39,13
+    LTEXT           "截止频率",IDC_STATIC,39,67,39,13
+    EDITTEXT        IDC_GAMMAH,82,23,32,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GAMMAL,82,43,32,17,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CUTOFF_FREQ,82,63,32,17,ES_AUTOHSCROLL
+END
+
+IDD_DEGENERATE DIALOG DISCARDABLE  0, 0, 187, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "退化模型选择"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,155,50,14
+    PUSHBUTTON      "取消",IDCANCEL,109,155,50,14
+    GROUPBOX        "大气湍流退化模型",IDC_STATIC,17,17,157,42,WS_GROUP
+    CONTROL         "基于大气湍流的退化模型",IDC_ATMOSPHERIC_TURBULENCE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,21,29,149,12
+    LTEXT           "设置参数k=",IDC_STATIC,23,44,43,9
+    EDITTEXT        IDC_EDIT1_k,66,44,38,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "运动退化模型",IDC_STATIC,16,64,157,54
+    CONTROL         "运动退化模型",IDC_MOTION_DEGENERATE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,19,75,149,12
+    LTEXT           "参数a=",IDC_STATIC,23,87,26,9
+    EDITTEXT        IDC_EDIT2_a,49,87,38,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "参数T=",IDC_STATIC,23,102,26,9
+    EDITTEXT        IDC_EDIT2_T,49,101,38,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "参数b=",IDC_STATIC,96,87,26,9
+    EDITTEXT        IDC_EDIT2_b,123,87,38,12,ES_AUTOHSCROLL | WS_DISABLED
+    GROUPBOX        "无需退化处理",IDC_STATIC,16,122,157,27
+    CONTROL         "不需要人为退化(图像已是退化图像)",IDC_REGENETATED_IMAGE,
+                    "Button",BS_AUTORADIOBUTTON | WS_GROUP,19,133,149,12
+END
+
+IDD_INVERSEFILTER_RADIUS DIALOG DISCARDABLE  0, 0, 165, 144
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "频率设定"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,20,123,50,14
+    PUSHBUTTON      "取消",IDCANCEL,92,123,50,14
+    GROUPBOX        "全滤波",IDC_STATIC,31,17,99,30
+    CONTROL         "全滤波",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,41,28,47,
+                    9
+    GROUPBOX        "逆滤波截止频率半径",IDC_STATIC,30,67,99,30
+    CONTROL         "",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,42,80,8,8
+    EDITTEXT        IDC_EDIT2,53,78,35,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_IDEAL_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_BUTTERWORTH_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_HOMOMORPHIC_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_DEGENERATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_INVERSEFILTER_RADIUS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 137
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Freqfilter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

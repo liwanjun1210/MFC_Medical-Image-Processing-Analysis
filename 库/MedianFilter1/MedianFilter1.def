@@ -1,0 +1,7 @@
+; MedianFilter1.def : Declares the module parameters for the DLL.
+
+LIBRARY      "MedianFilter1"
+DESCRIPTION  'MedianFilter1 Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

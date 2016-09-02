@@ -1,0 +1,7 @@
+; ThresholdManu.def : Declares the module parameters for the DLL.
+
+LIBRARY      "ThresholdManu"
+DESCRIPTION  'ThresholdManu Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

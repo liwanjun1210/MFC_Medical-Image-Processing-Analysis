@@ -1,0 +1,7 @@
+; HSV_RGB.def : Declares the module parameters for the DLL.
+
+LIBRARY      "HSV_RGB"
+DESCRIPTION  'HSV_RGB Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

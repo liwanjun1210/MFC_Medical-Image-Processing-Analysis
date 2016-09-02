@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MorPhologyProcess - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\LWJ\AppData\Local\Temp\RSP3025.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /FR"Debug/" /Fp"Debug/MorPhologyProcess.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\VC++\¿â\MorPhologyProcess\MorPhologyDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\LWJ\AppData\Local\Temp\RSP3025.tmp" 
+Creating temporary file "C:\Users\LWJ\AppData\Local\Temp\RSP3026.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/MorPhologyProcess.pdb" /debug /machine:I386 /def:".\MorPhologyProcess.def" /out:"Debug/MorPhologyProcess.dll" /implib:"Debug/MorPhologyProcess.lib" /pdbtype:sept 
+".\Debug\MorPhologyDlg.obj"
+".\Debug\MorPhologyProcess.obj"
+".\Debug\StdAfx.obj"
+".\Debug\MorPhologyProcess.res"
+]
+Creating command line "link.exe @C:\Users\LWJ\AppData\Local\Temp\RSP3026.tmp"
+<h3>Output Window</h3>
+Compiling...
+MorPhologyDlg.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/MorPhologyProcess.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\MorPhologyDlg.sbr" ".\Debug\MorPhologyProcess.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+MorPhologyProcess.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

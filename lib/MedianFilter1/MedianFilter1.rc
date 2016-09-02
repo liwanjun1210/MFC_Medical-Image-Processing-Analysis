@@ -1,0 +1,202 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MedianFilter1.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MedianFilter1 DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MedianFilter1\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MedianFilter1.DLL\0"
+            VALUE "ProductName", "MedianFilter1 Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ENHANCE_MEDIANFILT DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "滤波"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,130,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,24,50,14
+    GROUPBOX        "请选择窗口大小",IDC_STATIC,15,13,111,61
+    CONTROL         "3*3",IDC_MEDFILT_CHANGETOSIZE3,"Button",
+                    BS_AUTORADIOBUTTON,21,32,28,10
+    CONTROL         "5*5",IDC_MEDFILT_CHANGETOSIZE5,"Button",
+                    BS_AUTORADIOBUTTON,75,30,30,14
+    CONTROL         "7*7",IDC_MEDFILT_CHANGETOSIZE7,"Button",
+                    BS_AUTORADIOBUTTON,21,52,26,12
+    CONTROL         "9*9",IDC_MEDFILT_CHANGETOSIZE9,"Button",
+                    BS_AUTORADIOBUTTON,75,51,25,11
+END
+
+IDD_SHARPENING_FILTER DIALOG DISCARDABLE  0, 0, 206, 168
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "锐化空间滤波器模板"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,36,147,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,147,50,14
+    LTEXT           "请输入模板(确保模板的正确性,如因模板输入错误而造成的损失,一律与该程序的创造人员无关)",
+                    IDC_STATIC,17,14,169,18
+    GROUPBOX        "锐化掩模",IDC_STATIC,20,46,163,90
+    EDITTEXT        IDC_SHARP_COEF_00,34,63,35,10,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_01,85,64,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_03,33,83,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_04,83,84,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_05,133,83,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_02,134,62,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_06,33,106,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_07,85,105,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SHARP_COEF_08,133,104,35,12,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ENHANCE_MEDIANFILT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_SHARPENING_FILTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 199
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 161
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MedianFilter1.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

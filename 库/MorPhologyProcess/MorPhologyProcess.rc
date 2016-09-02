@@ -1,0 +1,203 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MorPhologyProcess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MorPhologyProcess DLL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MorPhologyProcess\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2015\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MorPhologyProcess.DLL\0"
+            VALUE "ProductName", "MorPhologyProcess Dynamic Link Library\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MORPHOLOGY DIALOG DISCARDABLE  0, 0, 268, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "基本形态学处理"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,65,195,50,14
+    PUSHBUTTON      "取消",IDCANCEL,135,195,50,14
+    LTEXT           "运算类型：",IDC_STATIC,165,28,41,9
+    COMBOBOX        IDC_COMBO_TYPE,210,27,47,45,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "阈值：",IDC_STATIC,7,161,24,10
+    EDITTEXT        IDC_EDIT_THRESHOLD,67,173,37,12,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER_THRESHOLD,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,28,163,135,10
+    CONTROL         "二值化",IDC_CHECK_BANDW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,180,12,38,11
+    LTEXT           "坐标：",IDC_STATIC,171,54,26,11
+    EDITTEXT        IDC_EDIT_POINTX,199,52,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_POINTY,199,70,35,12,ES_AUTOHSCROLL
+    LTEXT           "使用方法：\n\n      在9x9的结构元素中，通过鼠标的左键点解来画出需要的元素图案。黑代表1，灰代表0。如果想要清空结构元素，可以双击鼠标清空。",
+                    IDC_STATIC,174,93,73,77
+    CONTROL         "预览",IDC_CHECK_PREVIEW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,222,12,35,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_MORPHOLOGY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 209
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_MORPHOLOGY DLGINIT
+BEGIN
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xf2c5, 0xcdd5, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xafb8, 0xb4ca, "\000" 
+    IDC_COMBO_TYPE, 0x403, 3, 0
+0xaabf, "\000" 
+    IDC_COMBO_TYPE, 0x403, 3, 0
+0xd5b1, "\000" 
+    IDC_COMBO_TYPE, 0x403, 7, 0
+0xc7b9, 0xdcbc, 0xafbb, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xb8cf, 0xafbb, "\000" 
+    0
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MorPhologyProcess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZoomTrans - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\LWJ\AppData\Local\Temp\RSP480A.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_WINDLL" /D "_AFXDLL" /D "_MBCS" /D "_AFXEXT" /Fp"Debug/ZoomTrans.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\VC++\ZoomTrans\ZoomDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\LWJ\AppData\Local\Temp\RSP480A.tmp" 
+Creating temporary file "C:\Users\LWJ\AppData\Local\Temp\RSP480B.tmp" with contents
+[
+/nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/ZoomTrans.pdb" /debug /machine:I386 /def:".\ZoomTrans.def" /out:"Debug/ZoomTrans.dll" /implib:"Debug/ZoomTrans.lib" /pdbtype:sept 
+".\Debug\StdAfx.obj"
+".\Debug\ZoomDlg.obj"
+".\Debug\ZoomTrans.obj"
+".\Debug\ZoomTrans.res"
+]
+Creating command line "link.exe @C:\Users\LWJ\AppData\Local\Temp\RSP480B.tmp"
+<h3>Output Window</h3>
+Compiling...
+ZoomDlg.cpp
+G:\VC++\ZoomTrans\ZoomDlg.cpp(205) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+G:\VC++\ZoomTrans\ZoomDlg.cpp(206) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+G:\VC++\ZoomTrans\ZoomDlg.cpp(212) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+G:\VC++\ZoomTrans\ZoomDlg.cpp(253) : warning C4244: '=' : conversion from 'double' to 'unsigned char', possible loss of data
+Linking...
+   Creating library Debug/ZoomTrans.lib and object Debug/ZoomTrans.exp
+
+
+
+<h3>Results</h3>
+ZoomTrans.dll - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>
